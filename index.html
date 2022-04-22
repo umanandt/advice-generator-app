@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;400&family=Nunito:wght@200;300;500;600;700;800;900&family=Outfit:wght@300;400&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Advice generator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+   *{
+  margin: 0;
+  padding: 0;
+  font-family: 'Manrope', sans-serif;
+  
+  }
+  body{
+    background-color: hsl(218, 23%, 16%);
+  }
+  .container{
+    position: absolute;
+    width: 35%;
+    height: 40%;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-50%, -50%);
+    background-color:  hsl(217, 19%, 24%);
+    border-radius: 20px;
+  }
+  
+  .title{
+    position: absolute;
+    width: 60%;
+    height: 10%;
+    top: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .title p{
+    color: hsl(150, 100%, 66%);
+    font-size: 15px;
+    font-weight: 300;
+    font-style: bold;
+  }
+
+  .description{
+    position: absolute;
+    width: 80%;
+    height: 40%;
+    top: 30%;
+  }
+  .description p{
+    position:absolute;
+    padding: 5px;
+    color: hsl(193, 38%, 86%);
+    font-weight: 800;
+    font-size: 28px;
+    text-align: center;
+  }
+ .divider{
+  position: absolute;
+    width: 60%;
+    height: 8%;
+    top: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .divider img{
+   position: absolute;
+   width: 55%;
+ }
+
+ .icon{
+   position: absolute;
+   width: 50px;
+   height: 50px;
+   bottom: -20px;
+   border-radius: 50%;
+   background-color: hsl(150, 100%, 66%);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+ .icon img{
+   position: absolute;
+
+ }
+
+ @media screen and (max-width: 650px) {
+        .container {
+          width: 85vw;
+          height: 60vh;
+        }
+        .description p{
+          font-size: 20px;
+        }
+        
+      }
+    
+  </style>
+</head>
+<body>
+    
+ <div class="container">
+   <div class="title">
+     
+   </div>
+
+   <div class="description">
+     
+   </div>
+   
+   <div class="divider">
+  <img src="./images/pattern-divider-desktop.svg" alt="">
+   </div>
+   <div class="icon">
+   <img src="./images/icon-dice.svg" alt="">
+   </div>
+ </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Umanand Tripathi</a>.
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
